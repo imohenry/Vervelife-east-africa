@@ -1,0 +1,1329 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="#workout #aerobics #fitfam #fitness #diet">
+	<meta name="description"
+		content="Verve Life is an annual fitness event that unites a community of fitness enthusiasts who are passionate about workout, fun and a healthy lifestyle">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<!-- <link rel="shortcut icon" type="image/png" href="favicon.png"> -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.myverveworld.com/goodlife/css/videopopup.css">
+	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
+		<script src="https://kit.fontawesome.com/01d9c16713.js" crossorigin="anonymous"></script>
+	<title>Verve Life East Africa</title>
+	<style>
+		.owl-carousel {
+			display: flex;
+			max-width: 600px;
+			margin: 0 auto;
+			align-content: center;
+		}
+		.item img{
+			height: 50px !important;
+			margin-right: 30px;
+		}
+
+		
+		#success-news {
+			color: green;
+		}
+
+		#error-news {
+			color: red;
+		}
+
+		#toggle_class {
+			display: none;
+		}
+
+		#toggle_input {
+			cursor: pointer;
+		}
+
+		.navbar-toggler-icon {
+			color: #FFF !important;
+		}
+
+		.navbar-light .navbar-toggler {
+			border-color:rgba(255, 255, 255, 0) !important;
+		}
+
+		@media (min-width: 430px) {
+			.nav-margin {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+		}
+
+		/* @media (min-width: 991px) {
+			.bg-change {
+				color: black;
+			}
+		}
+
+		@media (max-width: 480px) {
+			a .reg-nav {
+				color: rgb(250, 247, 247);
+			}
+		} */
+		@media (max-width: 991px) {
+			.l-bloc .navbar a{
+				color: #ffffff;
+			}
+		}
+
+
+		@media (max-width: 600px) {
+			.partner-btn {
+				margin-top: 20px;
+				width: 200px;
+			}
+
+			.kaffy-mobile {
+				margin-top: 30px;
+			}
+
+			.p-lineup {
+				font-size: 15px;
+			}
+
+			.app-p-title {
+				font-size: 16px;
+			}
+
+			.alt-div {
+				padding-top: 40px;
+			}
+
+			.loc-text-title {
+				font-size: 44px;
+				text-align: center;
+			}
+
+			.hero-banner-1 {
+				background: url(img/nav-banner.png) center no-repeat;
+				background-size: contain;
+				height: 50vh;
+				position: relative;
+				margin-top: -42%;
+				/* width: 50%; */
+			}
+
+			.nairobi-city {
+				font-size: 32px !important;
+			}
+
+			.line-text-2{
+				font-size: 57px;
+			}
+
+			/* .app_mobile img {
+				width: 400px;
+			} */
+		}
+	</style>
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-NCPKB3Z');</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCPKB3Z" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<!-- 
+	<video autoplay="" muted="" loop="" id="myVideo" playsinline="">
+		<source src="./video/verve_life5.0.mp4" type="video/mp4">
+	</video> -->
+
+<div class="bg-image">
+</div>
+	<!-- Main container -->
+	<div class="page-container">
+
+		<nav class="navbar navbar-expand-lg navbar-light nav-margin">
+			<a class="navbar-brand" href="#"><img src="img/verve-life-logo.svg"
+					width="100"></a>
+			
+					
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+					<span><i class="fa-solid fa-bars"></i></span>
+				</button>
+
+			<!-- <ul class="nav navbar-nav">
+				<li class="active"><a href="#">Home</a></li>
+			</ul> -->
+		
+			<div class="collapse navbar-collapse" id="navbarNavDropdown" >
+				 <a class="nav-link" href="about.html" style="color: #ffffff;">About</a>
+					 <a class="nav-link" href="https://interswitchgroup.com/contact-us" style="color: #ffffff;">Contact</a>
+				<ul class="navbar-nav ml-auto ham">
+
+					<li class="nav-item">
+						<div class="dd">
+							<div class="dd-a"> <span class="flag-flex"><img style="padding-right: 10px;" src="img/Kenya-small-flag.svg" alt=""><i style="color:#FFF" class="fa-solid fa-chevron-down"></i> </span></div>
+							<input type="checkbox">
+							<div class="dd-c">
+							  <ul>
+								<li><a class="drop-child" href="https://www.myverveworld.com/life/"> <span><img src="img/Nigeria-flag.svg" alt=""></span></a></li>
+							  </ul>
+							</div>
+						  </div>
+						  <!-- ...and ends here. -->
+						</div>
+
+					</li>
+
+				</ul>
+			</div>
+		</nav>
+		<div class="bg-change">
+		</div>
+		<!-- hero -->
+		<div class="bloc bloc-fill-screen none bg-Desktop-201441-5 l-bloc" id="hero" data-appear-anim-style="fadeIn">
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 hero-first-col-mb" style="z-index: 3;">
+						
+					
+						<h1 class="mg-md h1-title btn-resize-mode tc-white">
+						<span class="line-text">GROOVE. Workout. </span> <br> <span class="neverstop" style="color: #EE312A; font-size: 86px;"> Breathe! </span>
+						</h1>
+
+						
+
+						<p class="mg-md smalltext-title">
+						<span class="join-text">Join</span> #Africa'sBiggestFitnessParty in
+						</p>
+						<h6 class="mg-md h6-style">
+							Kenya & Uganda
+					   </h6>
+
+						<!-- <h3
+							class="float-none text-center tc-white btn-resize-mode download_text float-lg-none mg-clear text-w-90 sm-shadow register_view">
+							Download the Verve Life Mobile to Register Now
+						</h3> -->
+						<div class="nav-btn-space">
+							<a href="rhttps://www.myverveworld.com/life/east-africa/register.html" class="btn btn-lg btn-rd btn-ku-blue" target="_blank">Register now</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- hero END -->
+		<!-- <div class="hero-banner-1">
+		</div> -->
+		<!-- ScrollToTop Button -->
+		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><span
+				class="fa fa-chevron-up"></span></a>
+		<!-- ScrollToTop Button END-->
+
+
+		<!-- about-verve -->
+		<div class="bloc bgc-ghost-blue l-bloc" id="about-verve">
+			<div class="container bloc-next">
+				<div class="row">
+					<div class="col-md-12 col-lg-8 offset-lg-2 bloc-margin-bottom">
+						
+						<h3 class="text-center h3-fit-title">
+							<span style="color: #ee312a;">#Africa'sBiggestFitnessParty</span>
+						</h3>
+						<h6 class="text-center h6-fit-title">Groove. Workout. Breathe!</h6>
+						<p class="text-center p-fit-style">
+							If you missed out on the last edition of VerveLife, you missed a great deal! 
+							Get ready to experience the ultimate fitness extravaganza in Africa by joining VerveLife 6.0, the largest fitness party in Africa!  
+							This inclusive fitness event seamlessly blends exercise, music, networking, wholesome food, and more for an unforgettable experience.  
+							Don't miss out on the chance to get fit and have a blast at the same time! 
+
+ 							Join thousands of other fitness enthusiasts across Africa to have some amazing fitness funnn! 
+						</p>
+
+					</div>
+				</div>
+				<div class="row" style="justify-content: space-between;">
+					<div class="col-md-4 order-lg-0 offset-lg-0 col-lg-4 about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<div align="center">
+									<svg width="77" height="78" viewBox="0 0 77 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<ellipse cx="38.5" cy="39" rx="38.5" ry="39" fill="#00425F"/>
+										<g clip-path="url(#clip0)">
+											<path d="M51.3948 21.0089C44.982 21.5741 40.2499 24.7749 37.4913 29.4023C35.6426 31.7199 31.9496 38.7954 30.6065 42.4994C28.1713 47.1054 26.0477 52.5857 24.3858 57.5261C23.37 60.5472 27.9314 62.5182 28.9531 59.4835C30.1959 55.7873 31.6974 51.791 33.3942 48.0825C35.0781 51.8512 36.7891 55.6075 38.6262 59.3043C40.0501 62.1741 44.3347 59.6574 42.916 56.7973C41.0246 52.9918 39.2677 49.1256 37.5366 45.2463C37.5586 45.1713 37.5864 45.0983 37.6097 45.0239C37.8981 45.106 38.2162 45.1312 38.5667 45.0646C41.2153 44.5674 43.864 44.0714 46.5146 43.5741C47.6468 43.3614 48.0807 42.1224 47.9023 41.1305C47.3669 38.1579 45.6733 36.0899 43.5652 34.1332C43.2523 33.0688 42.2086 32.1273 41.0504 31.1916C43.3984 27.3958 47.2317 25.3356 52.2212 24.8959C54.7677 24.6728 53.9193 20.7871 51.3948 21.0089ZM41.7443 37.905C42.3993 38.5866 42.9568 39.3037 43.3777 40.134C42.0961 40.3745 40.8138 40.6144 39.5321 40.855C40.1788 39.8139 40.9231 38.831 41.7443 37.905Z" fill="white"/>
+											<path d="M47.2279 34.5213C49.1118 34.5213 50.639 32.9941 50.639 31.1103C50.639 29.2264 49.1118 27.6992 47.2279 27.6992C45.3441 27.6992 43.8169 29.2264 43.8169 31.1103C43.8169 32.9941 45.3441 34.5213 47.2279 34.5213Z" fill="white"/>
+										</g>
+										<defs>
+											<clipPath id="clip0">
+												<rect width="40" height="40" fill="white" transform="translate(19 21)"/>
+											</clipPath>
+										</defs>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<h3 class="text-center tc-h3 mg-sm">
+							Workout Programs
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Participate in fun and enjoyable exercises <br>
+							 regardless of your age or degree of fitness
+						</p>
+					</div>
+					<!-- <div class="col-md-4 about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<img src="./icons/Group 9.svg" alt="">
+							</div>
+						</div>
+						<h3 class="text-center tc-h3 mg-sm">
+							Amazing Deals
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Get discounted prices on meals, activewear and other items when you pay with your Verve card</p>
+					</div> -->
+					<div class="col-md-4 about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<img src="./icons/Group 10.svg" alt="">
+							</div>
+						</div>
+						<h3 class="text-center tc-h3 mg-sm">
+							Healthy Food
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Get meals to facilitate your fitness journey as the key to long-term health is a mix of good diet and activity
+						</p>
+					</div>
+					<!-- <div class="col-md-4 bloc-margin-top about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<img src="./icons/Group 13.svg" alt="">
+							</div>
+						</div>
+						<h3 class="text-center tc-h3 mg-sm">
+							Kiddies Section
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Treat your kids and keep them entertained with fantastic experiences and activities suited for them		</p>
+					</div>
+				
+					<div class="col-md-4 bloc-margin-top about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<img src="./icons/Group 11.svg" alt="">
+							</div>
+						</div>
+						<h3 class="text-center tc-h3  mg-sm">
+							Fitness Consultation
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Receive free health tips and consultations from top fitness experts to help you develop a regular fitness routine and define your goals	</p>
+					</div> -->
+
+					<!-- <div class="col-md-4 bloc-margin-top about_boxes">
+						<div class="text-center tc-circle">
+							<div class="icons_verve">
+								<img src="./icons/Group 14.svg" alt="">
+							</div>
+						</div>
+						<h3 class="text-center tc-h3 mg-sm">
+							Lifestyle MasterClass
+						</h3>
+						<p class="text-center p-bloc-1-style">
+							Enjoy exclusive classes on nutrition, yoga and work-life balance to help you make improvements to your diet and life<br>
+						</p>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+		<!-- about-verve END -->
+
+
+		<div class="bloc bgc-ghost-white l-bloc" id="vervehost">
+			<div class="container bloc-md">
+				<div class="row">
+					<div class="col">
+						<h3 class="text-center section-title h3-lineup">
+							The VerveLife 6.0 Trainers<br>
+						</h3>
+						<p class="text-center p-lineup">Workout with our seasoned instructors and stand a chance to win amazing prizes.
+							<br>
+							Join us and experience the sweat-dripping, heart pumping drill.
+						</p>
+					</div>
+				</div>
+				<div class="row voffset center-fit">
+
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/alvin-color.png" data-src="./Instructors/alvin-color.png"
+							class="img-fluid mx-auto d-block img-2-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Feel the Timeless Energy <br>with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Alvin
+						</h3>
+
+					</div>
+
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/QUINCY.png" data-src="./Instructors/QUINCY.png"
+							class="img-fluid mx-auto d-block img-2-style img-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Strength and Mobility <br> with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Quincy
+						</h3>
+						
+					</div>
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/RHOTIMMI.png" data-src="./Instructors/RHOTIMMI.png"
+							class="img-fluid mx-auto d-block img-2-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Cardio Vibes on Repeat <br>with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Rhotimi
+						</h3>
+
+					</div>
+					
+				</div>
+					<div class="row voffset center-fit">
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/CHIKI.png" data-src="./instructors/CHIKI.png"
+							class="img-fluid mx-auto d-block img-2-style img-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Dance and More <br> with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Chiki
+						</h3>
+						
+					</div>
+
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/SIRLEON.png" data-src="./Instructors/SIRLEON.png"
+							class="img-fluid mx-auto d-block img-2-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Work Dem Glutes <br>with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Sirleon
+						</h3>
+
+					</div>
+
+					<div class="col-md-2 lineup-margin">
+						<img src="./Instructors/kemen.png" data-src="./Instructors/kemen.png"
+							class="img-fluid mx-auto d-block img-2-style lazyload" />
+						<p class="text-center p-lineup-style">
+							Cardio Vibes on Repeat <br>with
+						</p>
+						<h3 class="mg-md text-center h3-lineup-instructor h3-margin-bottom">
+							Kemen
+						</h3>
+
+					</div>
+					
+
+				</div>
+				<div class="row voffset center-fit second-instructor">
+
+				</div>
+
+			</div>
+		</div>
+		
+				</div>
+			</div>
+		</div>
+		<!-- vervehost END -->
+
+
+
+		<!-- vervehost -->
+		<!-- <div class="bloc l-bloc verve-location" id="vervehost">
+			<div class="container bloc-md">
+				<div class="row voffset">
+					<div class="col-md-6 verve-adjust">
+						<h3 class="loc-text-title" id="explore">
+								VerveLife is in<br> your City 
+						</h3>
+					</div> 
+
+					<div class="col-md-6"> 
+						<h3 class="p-text-title">
+							Watch out for the VerveLife 5.0 experience coming to a fitness centre near you. Explore the
+							schedule, be prepared and save the date!
+						</h3>
+					</div>
+
+					<div class="container-background">
+						<span class="asaba-style">Asaba</span>
+						<span class="abuja-lagos"> Abuja</span> <span class="abuja-lagos">Lagos</span>
+						
+					</div>
+				</div>
+
+
+
+				<div class="row voffset" >
+					<div class="col-md-4">
+					<div class="flip-card">
+						<div class="flip-card-inner">
+							Front -->
+						<!--  <div class="flip-1 flip-card-front" style="border-radius: 16px;">
+							<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">UYO</h4>
+						  </div>
+						  <!-- Back -->
+
+						  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+							<h4 class="location-title" style="color: #00B8DE;">Uyo</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> August
+									13th, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Uyo Fit Fest. Emerald Event Centre, 
+									Edet Akpan Avenue, Uyo.</p>
+									<br>
+									<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+						  </div>
+						</div>
+					</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-2 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">ASABA</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+								<h4 class="location-title" style="color: #00B8DE;">Asaba</h4>
+									<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> August
+										20th, 2022</p>
+									<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Plot IV
+										core Area, NTA rd
+										beside Lavida Hotel, Asaba Delta State</p>
+										<br>
+										<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-3 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">ENUGU</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+								<h4 class="location-title" style="color: #00B8DE;">Enugu</h4>
+									<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> August
+										27th, 2022</p>
+									<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Nnamdi Azikiwe Stadium, 20, Star Empire Layout, Amachalla, Ngwo-Asaa, Enugu.</p>
+										<br>
+
+									<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-4 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">PHC</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+								<h4 class="location-title" style="color: #00B8DE;">Port Harcourt</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> September
+									3rd, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Glass house, along Rumola Stadium, Link Road, PHC
+								</p>
+
+								<br>
+								<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-5 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">BENIN</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+								<h4 class="location-title" style="color: #00B8DE;">Benin</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> September
+									10th, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Church Unusual, JBS Estate off Boundary Road, Benin City.</p>
+									<br>
+									<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-6 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">IBADAN</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back">
+								<h4 class="location-title" style="color: #00B8DE;">Ibadan</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> September
+									17th, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Tabata Fest Ibadan. 
+									Adamasigba Stadium Ibadan.
+								</p>
+								<br>
+								<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-7 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">ABUJA</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back" style="filter: blur(4px);">
+								<h4 class="location-title" style="color: #00B8DE;">Abuja</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> September 24th, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Golden Bird Marquee, Plot 895A, Ameh Ebute Street, Wuye.</p>
+								<br>
+								
+								<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div>
+ -->
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-8 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">UNILAG</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back">
+								<h4 class="location-title" style="color: #00B8DE;">Lagos (Unilag)</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> October
+									1st, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> 6000secs Unilag Sport Center Lagos. 
+								</p>
+
+								<br>
+								<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+							  </div>
+							</div>
+						</div>
+					</div> -->
+
+
+					<!-- <div class="col-md-4">
+						<div class="flip-card">
+							<div class="flip-card-inner"> -->
+								<!-- front -->
+							  <!-- <div class="flip-9 flip-card-front">
+								<p class="location-content"><i style="color: #18425D;"></i></p>
+								<p class="location-content"><i style="color: #18425D;"></i>
+								</p>
+								<p class="location-content flip-content"> <span style="color: #5F738C;"> </span></p>
+								<p class="location-content"><span style="color: #5F738C;"></span></p>
+								<h4 class="flip-title" style="margin-top: 180px">LAGOS</h4>
+							  </div> -->
+							  <!-- back -->
+							  <!-- <div class="flip-card-back">
+								<h4 class="location-title" style="color: #00B8DE;">Lagos (Agege)</h4>
+								<p class="location-content"><i class="fa-solid fa-calendar" style="color: #DC4437; font-size: 23px;"></i> October
+									29th, 2022</p>
+								<p class="location-content"><i class="fa fa-map-marker" style="color: #DC4437; font-size: 23px;"></i> Agege Stadium, Oshitelu Street, 
+									Agege, Lagos
+								</p>
+								<br>
+								<a href="registration.html" class="btn btn-lg btn-rd btn-ku-dark-blue" target="_blank">Reserve a slot</a>
+								
+							  </div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- video-gallery END -->
+
+		<div id="slideshow">
+			<div class="slide-wrapper">
+				<!-- Slide 1 -->
+					<div class="slide">		
+						<div class="location-container text-center" style="z-index: 3; background-color: #02020354;">
+							<h1 class="mg-md h1-title btn-resize-mode tc-white">
+							<span class="line-text-2">Vervelife is in Kenya</span> <br> <span class="nairobi-city" style="color: #FFF; font-size: 46px;"> The City of Nairobi </span>
+							</h1>
+							
+							<div class="location-and-venue">
+								<p class="smalltext-title-venue-date">
+								<i class="fa-solid fa-location-dot" ></i> Nairobi Street Kitchen Mpaka Road, Westlands, Nairobi, Kenya.
+								</p>
+
+								<p class="smalltext-title-venue-date">
+									<i class="fa-solid fa-calendar"></i><span class="join-text"> Saturday,</span> October 21st, 2023
+									</p>
+									<p class="smalltext-title-venue-date">
+										<i class="fa-solid fa-clock"></i> 10:00am EAT
+									</p>
+								</div>
+
+							<!-- <h3
+								class="float-none text-center tc-white btn-resize-mode download_text float-lg-none mg-clear text-w-90 sm-shadow register_view">
+								Download the Verve Life Mobile to Register Now
+							</h3> -->
+							<div class="nav-btn-space btn-move">
+								<a href="https://www.myverveworld.com/life/east-africa/register.html" class="btn btn-lg btn-rd btn-ku-blue" target="_blank">Reserve a slot</a>
+
+							</div>
+
+						</div>
+				</div>
+
+				<!-- Slide 2 -->
+			  <div class="slide">	<div class="location-container text-center" style="z-index: 3; background-color: #02020354;">
+				<h1 class="mg-md h1-title btn-resize-mode tc-white">
+				<span class="line-text-2">Vervelife is in Uganda</span> <br> <span class="nairobi-city" style="color: #FFF; font-size: 46px;"> The City of Kampala </span>
+				</h1>
+				
+				<div class="location-and-venue">
+					<p class="smalltext-title-venue-date">
+					<i class="fa-solid fa-location-dot" ></i> Junction Mall, 3rd Floor Car park, Ngong Road, Kingara Rd, Nairobi, Kenya
+					</p>
+
+					<p class="smalltext-title-venue-date">
+						<i class="fa-solid fa-calendar"></i><span class="join-text"> Saturday,</span> October 22nd, 2022
+						</p>
+						<p class="smalltext-title-venue-date">
+							<i class="fa-solid fa-clock"></i> 07:00am EAT
+						</p>
+					</div>
+
+				<!-- <h3
+					class="float-none text-center tc-white btn-resize-mode download_text float-lg-none mg-clear text-w-90 sm-shadow register_view">
+					Download the Verve Life Mobile to Register Now
+				</h3> -->
+				<div class="nav-btn-space btn-move">
+					<a href="https://www.myverveworld.com/life/east-africa/register.html" class="btn btn-lg btn-rd btn-ku-blue" target="_blank">Reserve a slot</a>
+
+				</div>
+
+			</div>
+		</div>
+			</div>
+		  </div>
+
+		<!-- Vervelife in Kenya -->
+		<!-- <div class="bg-image-2">
+		</div>
+		<div class="bloc bloc-fill-screen none bg-Desktop-201441-6 l-bloc text-center" id="hero" data-appear-anim-style="fadeIn">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 hero-first-col-mb text-center" style="z-index: 3;">
+
+						<h1 class="mg-md h1-title btn-resize-mode tc-white">
+						<span class="line-text-2">Vervelife is in Kenya</span> <br> <span class="nairobi-city" style="color: #FFF; font-size: 46px;"> The City of Nairobi </span>
+						</h1>
+						
+						<div class="location-and-venue">
+							<p class="smalltext-title-venue-date">
+							 <i class="fa-solid fa-location-dot" ></i> Junction Mall, 3rd Floor Car park, Ngong Road, Kingara Rd, Nairobi, Kenya
+							 </p>
+	 
+							 <p class="smalltext-title-venue-date">
+								 <i class="fa-solid fa-calendar"></i><span class="join-text"> Saturday,</span> October 22nd, 2022
+								 </p>
+								 <p class="smalltext-title-venue-date">
+									<i class="fa-solid fa-clock"></i> 10:00am EAT
+								</p>
+							 </div>
+
+					
+						<div class="nav-btn-space btn-move">
+							<a href="registration.html" class="btn btn-lg btn-rd btn-ku-blue" target="_blank">Reserve a slot</a>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	 -->
+
+		<!-- photos -->
+		<!-- <div class="bloc none bgc-indigo-dye l-bloc" id="photos">
+			<div class="container bloc-md">
+				<div class="row">
+					<div class="col">
+						<h3 class="mg-md text-center gallery-title">
+							Last Year's Vibe Was LIT!!!
+						</h3>
+						<p class="text-center p-gallery">
+							Were you part of the VerveLife 4.0? Spot yourself in the crowd, or get a glimpse of what you missed
+						</p>
+					</div>
+				</div>
+				<div class="row voffset">
+					<div class="col-lg-3 col-md-6">
+						<a href="#" data-lightbox="img/IMG_2765.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2765.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2765.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-0">
+						<a href="#" data-lightbox="img/IMG_2699.JPG" data-gallery-id="gallery-1" class="lazyload"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2699.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2699.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-4 mt-lg-0">
+						<a href="#" data-lightbox="img/IMG_2795.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2795.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2795.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-4 mt-lg-0">
+						<a href="#" data-lightbox="img/MIV_5909 - Copy.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/MIV_5909 - Copy.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/MIV_5909 - Copy.JPG 2x" /></a>
+					</div>
+				</div>
+				<div class="row voffset">
+					<div class="col-lg-3 col-md-6">
+						<a href="#" data-lightbox="img/IMG_2854.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2854.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2854.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-0">
+						<a href="#" data-lightbox="img/IMG_2610.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2610.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2610.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-4 mt-lg-0">
+						<a href="#" data-lightbox="img/IMG_2734.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2734.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2734.JPG 2x" /></a>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-1 mt-md-4 mt-lg-0">
+						<a href="#" data-lightbox="img/IMG_2686.JPG" data-gallery-id="gallery-1"><img
+								src="img/lazyload-ph.png" data-src="img/IMG_2686.JPG"
+								class="img-fluid mx-auto d-block images lazyload" srcset="img/IMG_2686.JPG 2x" /></a>
+					</div>
+				</div>
+
+			</div>
+		</div> -->
+		<!-- photos END -->
+
+		<div class="bloc l-bloc animated fadeIn app-bg" id="app-area">
+			<div class="container bloc-md">
+				<div class="row voffset">
+					<div class="col-md-6">
+						<h3 class="app-text-title">
+							Health <span class="app-span">& fitness</span> in your pocket
+						</h3>
+						<p class="app-p-title">Sweat out for good and keep track of your<br>favourite fitness
+							activities,
+							whether it's long<br> walks, short runs or cycling.</p>
+						<div class="app_web_view">
+							<a href="https://apps.apple.com/ng/app/verve-life/id1474774751"
+								class="btn btn-lg btn-rd btn-ku-" style="margin-top: 20px;"><img
+									src="img/verve-apple.svg"></a>
+
+							<a href="https://play.google.com/store/apps/details?id=com.interswitchgroup.vervelife&hl=en"
+								class="btn btn-lg btn-rd" style="margin-top: 20px;"><img src="img/verve-google.svg"></a>
+						</div>
+						<div class="text-center android_iphone">
+						</div>
+					</div>
+					
+					<div class="col-md-6 text-center app_mobile">
+						<img src="img/Group 57.svg" class="img-responsive">
+
+					</div>
+					
+				</div>
+			</div>
+			<div class="container-background">
+				<span class="app-style">the App</span>
+				
+			</div>
+		</div>
+
+		<!-- <div>
+			<div class="owl-carousel" >
+				<div class="item"> <img  src="img/partners/lucozade.svg" alt=""> </div>
+				<div class="item"> <img  src="img/partners/oraimo.svg" alt=""> </div>
+				<div class="item"> <img  src="img/partners/aquafina.svg" alt=""> </div>
+				<div class="item"> <img  src="img/partners/synlab.svg" alt=""> </div>
+				<div class="item"> <img  src="img/partners/malt.svg" alt=""> </div>
+			  </div>
+		</div> -->
+
+
+		<!-- partners END -->
+
+		<!-- cta -->
+		<div class="bgc-indigo-dye">
+			<div>
+
+				<div class="site-footer">
+
+					<div class="container">
+						<div class="footer_img"><img src="img/verve-life-logo.svg" class="img-responsive"
+								style="width: auto;">
+						</div>
+						<div class="footer_row">
+							<div class="footer_column">
+								<div class="copyright-list">
+									<ul>
+										<li><a href="about.html" target="_blank">About</a></li>
+									<!--	<li><a href="https://www.myverveworld.com/" target="_blank">Support</a></li> -->
+										<li><a href="https://interswitchgroup.com/contact-us" target="_blank">Contact</a></li>
+										<li><a href="https://interswitchgroup.com/terms-condition" target="_blank">Terms & Conditions</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer_column">
+								<ul class="social-icons">
+									<li>
+										<a class="linkedin" href="https://ng.linkedin.com/company/verve-international-ltd"
+											target="_blank"><i class="lni lni-linkedin"></i></a>
+									</li>
+									<li>
+										<a class="twitter" href="https://twitter.com/vervecard?lang=en" target="_blank"><i
+												class="lni lni-twitter"></i></a>
+									</li>
+									<li>
+										<a class="facebook" href="https://www.facebook.com/VerveCard/"
+											target="_blank"><i class="lni lni-facebook"></i></a>
+									</li>
+									<li>
+										<a class="dribbble" href="https://www.instagram.com/vervecard/?hl=en"
+											target="_blank"><i class="lni lni-instagram"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<hr style="border-color: #cccccc;">
+						<div class="footer_row add_padding">
+							<div class="footer_column">
+								<p class="copyright-text">© 2002 - 2023 Interswitch Group</p>
+							</div>
+							<div class="footer_column">
+								<div class="privacy-list">
+									<ul>
+										<li>
+											<a href="https://interswitchgroup.com/privacy" target="_blank">Privacy
+												Policy</a>
+										</li>
+										<!-- <li>
+											<a href="https://interswitchgroup.com/terms-condition" target="_blank">Legal
+												Terms</a>
+										</li>  -->
+
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cta END -->
+
+	</div>
+	<!-- Main container END -->
+
+	<div id="modal-21302" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog  modal-dialog-centered" role="document">
+			<div class="d-block modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+				<div class="modal-body">
+					<div class="p-bloc-0-style text-center">
+						<h2 class="form-title"> Get #FitTolive</h2>
+						<p class="p-form">Help us create an experience that is perfect for you, please share your
+							details here.</p>
+					</div>
+					<form action="javascript:;" id="form_details" name="form_content" onsubmit="insert_value()">
+						<h6 id="error-news" class='text-center'></h6>
+						<h6 id="success-news" class='text-center'></h6>
+						<br>
+						<div id="form_inputs">
+							<div class="row">
+								<div class="col">
+									<label>
+										Firstname
+									</label><br>
+									<input name="fname" type="text" class="form-control" placeholder="Firstname" />
+								</div>
+								<div class="col">
+									<label>
+										Lastname
+									</label><br>
+									<input name="lname" type="text" class="form-control" placeholder="Lastname" />
+								</div>
+							</div>
+							<div class="form-group" style="margin-top: 15px;">
+								<label>
+									Phone Number
+								</label>
+								<input name="mobile_field" class="form-control" type="text"
+									placeholder="Phone Number" />
+							</div>
+							<div class="form-group">
+								<label>
+									Email Address
+								</label>
+								<input name="email_field" class="form-control" type="email"
+									data-error-validation-msg="Not a valid email address"
+									placeholder="Your Email Address" />
+							</div>
+							<div class="form-group">
+								<span id="toggle_input"><strong style="color:#479FC8"><u>Select a MasterClass
+										</u></strong></span>
+
+							</div>
+							<div class="form-group" id="toggle_class">
+								<label>Select your preferred MasterClass</label>
+								<div class="checkbox">
+									<label style="color: #353F50;font-size: 16px;"><input type="checkbox" name="class1"
+											value="Weight Management"> Nutrition
+										MasterClass
+										1 (Weight Management)</label>
+								</div>
+								<div class="checkbox">
+									<label style="color: #353F50;font-size: 16px;"><input type="checkbox" name="class2"
+											value="Cure & Disease">
+										Nutrition MasterClass
+										2 (Cure
+										and Disease prevention)</label>
+								</div>
+								<div class="checkbox">
+									<label style="color: #353F50;font-size: 16px;"><input type="checkbox"
+											name="workplace" value="Workplace Exercise"> Workplace
+										Exercise</label>
+								</div>
+								<div class="checkbox">
+									<label style="color: #353F50;font-size: 16px;"><input type="checkbox" name="yoga"
+											value="Yoga at Work">
+										Yoga at Work</label>
+								</div>
+								<div class="checkbox">
+									<label style="color: #353F50;font-size: 16px;"><input type="checkbox" name="preggo"
+											value="Fitness for Preggo's"> Fitness
+										for Preggo's</label>
+								</div>
+
+							</div>
+							<div class="text-center text-lg-center w-100">
+								<button class="btn btn-block btn-rd btn-ku-crimson" type="submit"
+									style="font-size: 14px; font-weight: 700;">
+									Submit
+								</button>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="modal-21303" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog  modal-dialog-centered" role="document">
+			<div class="d-block modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+				<div class="modal-body">
+					<div class="p-bloc-0-style text-center">
+						<h2 class="form-title"> Call for Vendors</h2>
+					</div>
+					<form>
+
+						<br>
+						<div id="form_inputs">
+							<div class="form-group">
+								<label>
+									Is Your Business
+									registered on
+									Quickteller Business?
+								</label>
+								<select class="form-control"
+									onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+									<option>--Is Your Business registered on Quickteller Business?--</option>
+									<option value="https://www.myverveworld.com/life/vendors.html">Yes</option>
+									<option value="https://business.quickteller.com/signup?referralCode=Verve">No
+									</option>
+								</select>
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal-21304" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+			<div class="d-block modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+
+				</div>
+				<div class="modal-body">
+					<div class="p-bloc-0-style text-center">
+						<h2 class="form-title">Vervelife 4.0 Satellite Events</h2>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th>Location</th>
+									<th>Date</th>
+									<th>Host</th>
+									<th>Activity</th>
+									<th>Handle</th>
+									<th>Venue</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Asaba</td>
+									<td>18th Sept</td>
+									<td>3riple T Fitness</td>
+									<td>Mini 4.0</td>
+									<td>@trainer_tim</td>
+									<td>Plot IV core Area, NTA road beside Lavida Hotel, Asaba Delta State</td>
+								</tr>
+
+								<tr>
+									<td>PHC</td>
+									<td>25th Sept</td>
+									<td>Steady Run</td>
+									<td>Mini 4.0</td>
+									<td>@steadyrun</td>
+									<td>Rivtaf park, by golf estate, Porthacourt</td>
+								</tr>
+
+								<tr>
+									<td>Lagos 1</td>
+									<td>1st Oct</td>
+									<td>Benfit</td>
+									<td>6000secs</td>
+									<td>@benfit</td>
+									<td>Unilag Sport Center Indoor</td>
+								</tr>
+
+								<tr>
+									<td>Ibadan</td>
+									<td>1st Oct</td>
+									<td>BK Fitness</td>
+									<td>Mini 4.0</td>
+									<td>@bk_gmb</td>
+									<td>Palms Mall Ring Road Ibadan</td>
+								</tr>
+
+								<tr>
+									<td>Abuja</td>
+									<td>8th Oct</td>
+									<td>Bodylinne Fitness Center</td>
+									<td>Mini 4.0</td>
+									<td>@enoyong</td>
+									<td>Ahmadu Bello Way, Abuja</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./js/jquery-3.3.1.min.js?3848"></script>
+	<!-- <script src="./js/owl-carousel.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js?6961"></script>
+	<script src="https://www.myverveworld.com/goodlife/js/jquery.magnify-popup.js"></script>
+	<script src="./js/blocs.min.js?2959"></script>
+	<script src="./js/jqBootstrapValidation.js"></script>
+	<script src="./js/formHandler.js?5020"></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
+	<script src="./js/lazysizes.min.js" defer></script>
+	<script src="./js/sweetalert.js" defer></script>
+	<script src='//cdnt.netcoresmartech.com/smartechclient.js'></script>
+	
+	<!-- Additional JS END -->
+
+
+	<script>
+		$(document).ready(function () {
+			$('.owl-carousel').owlCarousel({
+			items: 4,
+			loop: true,
+			margin: 10,
+			autoplay: true,
+			autoplaySpeed: 4000
+		});
+	})
+
+	</script>
+	
+	<script>
+		$(document).ready(function () {
+			var toggle = document.getElementById("toggle_input");
+			var content = document.getElementById("toggle_class");
+
+			$("#toggle_input").click(function () {
+				content.style.display = (content.dataset.toggled ^= 1) ? "block" : "none";
+			});
+
+			// const userAgent = navigator.userAgent;
+			// if (/android/i.test(userAgent)) {
+			// 	$(".android_iphone").html("<a href='https://play.google.com/store/apps/details?id=com.interswitchgroup.vervelife&hl=en' class='btn btn-style btn-lg btn-rd btn-ku-crimson mobile_view'>DOWNLOAD FOR ANDROID</a>");
+			// }
+			// if (/iPad|iPhone|iPod/i.test(userAgent)) {
+			// 	$(".android_iphone").html("<a href='https://apps.apple.com/ng/app/verve-life/id1474774751' class='btn btn-style btn-lg btn-rd btn-ku-crimson mobile_view'>DOWNLOAD FOR IPHONE</a>");
+			// }
+
+			const userAgent = navigator.userAgent;
+			if (/android/i.test(userAgent)) {
+				$(".android_iphone").html("<a href='https://play.google.com/store/apps/details?id=com.interswitchgroup.vervelife&hl=en' class='btn btn-lg btn-rd btn-ku- mobile_view'><img src='img/verve-google.svg'></a>");
+			}
+			if (/iPad|iPhone|iPod/i.test(userAgent)) {
+				$(".android_iphone").html("<a href='https://apps.apple.com/ng/app/verve-life/id1474774751' class='btn btn-lg btn-rd mobile_view'><img src='img/verve-apple.svg'></a>");
+			}
+		});
+
+		
+
+	</script>
+
+</body>
+
+</html>
